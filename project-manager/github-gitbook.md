@@ -3,7 +3,7 @@
 ## 1.1. 创建账户
 https://github.com/  在上面注册账户: gitexample
 图片测试22：
-[xx](images/project-manager/test.png)
+[xx](images\project-manager\test.png)
 
 
 ## 1.2. 生成本地公钥/私钥对

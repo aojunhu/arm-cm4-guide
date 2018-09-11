@@ -2,6 +2,8 @@
 # 1. GitHub
 ## 1.1. 创建账户
 https://github.com/  在上面注册账户: gitexample
+图片测试：
+[](images/project-manager/test.jpg)
 ## 1.2. 生成本地公钥/私钥对
 在本地Ubuntu上，ssh-keygen命令创建公钥/私钥对：
 ```

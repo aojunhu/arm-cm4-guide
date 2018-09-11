@@ -493,7 +493,418 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="github&#x548C;gitbook&#x4F7F;&#x7528;">Github&#x548C;GitBook&#x4F7F;&#x7528;</h1>
+                                <h1 id="1-github">1. GitHub</h1>
+<h2 id="11-&#x521B;&#x5EFA;&#x8D26;&#x6237;">1.1. &#x521B;&#x5EFA;&#x8D26;&#x6237;</h2>
+<p><a href="https://github.com/" target="_blank">https://github.com/</a>  &#x5728;&#x4E0A;&#x9762;&#x6CE8;&#x518C;&#x8D26;&#x6237;: gitexample</p>
+<h2 id="12-&#x751F;&#x6210;&#x672C;&#x5730;&#x516C;&#x94A5;&#x79C1;&#x94A5;&#x5BF9;">1.2. &#x751F;&#x6210;&#x672C;&#x5730;&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;</h2>
+<p>&#x5728;&#x672C;&#x5730;Ubuntu&#x4E0A;&#xFF0C;ssh-keygen&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;&#xFF1A;</p>
+<pre><code>$ ssh-keygen
+</code></pre><p>&#x7136;&#x540E;&#x6839;&#x636E;&#x63D0;&#x793A;&#x5728;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;&#x4E0B;&#x7684;.ssh&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x9ED8;&#x8BA4;&#x7684;&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;~/.ssh/id_rsa&#x662F;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;~/.ssh/id_rsa.pub&#x662F;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x3002;&#x6CE8;&#x610F;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x8981;&#x4E25;&#x52A0;&#x4FDD;&#x62A4;&#xFF0C;&#x4E0D;&#x80FD;&#x6CC4;&#x9732;&#x7ED9;&#x4EFB;&#x4F55;&#x4EBA;&#x3002;&#x5982;&#x679C;&#x5728;&#x6267;&#x884C;ssh-keygen&#x547D;&#x4EE4;&#x65F6;&#x9009;&#x62E9;&#x4E86;&#x4F7F;&#x7528;&#x53E3;&#x4EE4;&#x4FDD;&#x62A4;&#x79C1;&#x94A5;&#xFF0C;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x662F;&#x7ECF;&#x8FC7;&#x52A0;&#x5BC6;&#x7684;&#x3002;&#x81F3;&#x4E8E;&#x516C;&#x94A5;&#x6587;&#x4EF6;~/.ssh/id_rsa.pub&#x5219;&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#x5730;&#x516C;&#x5F00;&#x7ED9;&#x4ED6;&#x4EBA;&#x3002;
+&#x4E5F;&#x53EF;&#x4EE5;&#x7528;ssh-keygen&#x547D;&#x4EE4;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x540D;&#x79F0;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x516C;&#x94A5;&#xFF0C;&#x5F53;&#x62E5;&#x6709;&#x591A;&#x4E2A;GitHub&#x8D26;&#x53F7;&#x65F6;&#xFF0C;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x867D;&#x7136;&#x4E00;&#x4E2A;GitHub&#x8D26;&#x53F7;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;SSH&#x516C;&#x94A5;&#xFF0C;&#x4F46;&#x53CD;&#x8FC7;&#x6765;&#xFF0C;&#x4E00;&#x4E2A;SSH&#x516C;&#x94A5;&#x53EA;&#x80FD;&#x5BF9;&#x5E94;&#x4E8E;&#x4E00;&#x4E2A;GitHub&#x8D26;&#x53F7;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5728;~/.ssh&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x540D;&#x4E3A;gitexample&#x7684;&#x79C1;&#x94A5;&#x548C;&#x540D;&#x4E3A;gitexample.pub&#x7684;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code>$ ssh-keygen -C &quot;gitexample@gmail.com&quot; -f ~/.ssh/gitexample
+
+$ ls ~/.ssh/
+gitexample  gitexample.pub
+</code></pre><p>&#x5F53;&#x751F;&#x6210;&#x7684;&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;&#x4E0D;&#x5728;&#x7F3A;&#x7701;&#x4F4D;&#x7F6E;&#xFF08;~/.ssh/id_rsa&#x7B49;&#xFF09;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;ssh&#x547D;&#x4EE4;&#x8FDE;&#x63A5;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x65F6;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x53C2;&#x6570;-i <filename>&#x6307;&#x5B9A;&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;&#x3002;&#x6216;&#x8005;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;~/.ssh/config&#x4E2D;&#x9488;&#x5BF9;&#x76F8;&#x5E94;&#x4E3B;&#x673A;&#x8FDB;&#x884C;&#x8BBE;&#x5B9A;&#x3002;&#x4F8B;&#x5982;&#x5BF9;&#x4E8E;&#x4E0A;&#x4F8B;&#x521B;&#x5EFA;&#x4E86;&#x975E;&#x7F3A;&#x7701;&#x516C;&#x94A5;/&#x79C1;&#x94A5;&#x5BF9;~/.ssh/gitexample&#xFF0C;&#x53EF;&#x4EE5;&#x5728;~/.ssh/config&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x5199;&#x5165;&#x5982;&#x4E0B;&#x914D;&#x7F6E;&#x3002;</filename></p>
+<pre><code>Host github.com
+    User git 
+    Hostname github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/gitexample
+</code></pre><p>&#x597D;&#x4E86;&#xFF0C;&#x6709;&#x4E86;&#x4E0A;&#x9762;&#x7684;&#x51C6;&#x5907;&#xFF0C;&#x5C31;&#x5C06;~/.ssh/gitexample.pub&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x62F7;&#x8D1D;&#x5230;&#x526A;&#x5207;&#x677F;&#x3002;&#x7136;&#x540E;&#x5C06;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x7C98;&#x8D34;&#x5230;GitHub&#x7684;SSH&#x516C;&#x94A5;&#x7BA1;&#x7406;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x3002;
+&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x518D;&#x7528;ssh&#x547D;&#x4EE4;&#x8BBF;&#x95EE;GitHub&#xFF0C;&#x4F1A;&#x663E;&#x793A;&#x4E00;&#x6761;&#x8BA4;&#x8BC1;&#x6210;&#x529F;&#x4FE1;&#x606F;&#x5E76;&#x9000;&#x51FA;&#x3002;&#x5728;&#x8BA4;&#x8BC1;&#x6210;&#x529F;&#x7684;&#x4FE1;&#x606F;&#x4E2D;&#x8FD8;&#x4F1A;&#x663E;&#x793A;&#x8BE5;&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+<pre><code>$ ssh -T git@github.com
+Hi gitexample! You have successfully authenticated, but GitHub does not provide shell access.
+</code></pre><h2 id="13-&#x9879;&#x76EE;&#x6258;&#x7BA1;">1.3. &#x9879;&#x76EE;&#x6258;&#x7BA1;</h2>
+<p>&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5728;GitHub&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x9879;&#x76EE;&#xFF0C;&#x5305;&#x62EC;&#x521B;&#x5EFA;&#x7248;&#x672C;&#x5E93;&#x53CA;&#x4E3A;&#x9879;&#x76EE;&#x8BBE;&#x8BA1;&#x4E3B;&#x9875;&#x7B49;&#x3002;</p>
+<h3 id="131-&#x521B;&#x5EFA;&#x65B0;&#x9879;&#x76EE;">1.3.1. &#x521B;&#x5EFA;&#x65B0;&#x9879;&#x76EE;</h3>
+<p>Your repositories --&gt; Create a new repository  --&gt; set Repository name --&gt; Create Reopsitory Button</p>
+<h3 id="132-&#x7248;&#x672C;&#x5E93;&#x521D;&#x59CB;&#x5316;">1.3.2. &#x7248;&#x672C;&#x5E93;&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x5982;&#x679C;&#x662F;&#x4ECE;&#x5934;&#x521B;&#x5EFA;&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x5148;&#x514B;&#x9686;&#xFF0C;&#x5EFA;&#x7ACB;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x901A;&#x8FC7;&#x63A8;&#x9001;&#x5B8C;&#x6210;GitHub&#x7248;&#x672C;&#x5E93;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$ git clone git@github.com:gitexample/helloworld.git helloworld
+Cloning into &apos;helloworld&apos;...
+Warning: Permanently added the RSA host key for IP address &apos;13.250.177.223&apos; to the list of known hosts.
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
+</code></pre><h3 id="133-&#x521B;&#x5EFA;&#x5E76;&#x4FEE;&#x6539;&#x6587;&#x4EF6;readmemd">1.3.3. &#x521B;&#x5EFA;&#x5E76;&#x4FEE;&#x6539;&#x6587;&#x4EF6;README.md</h3>
+<pre><code>My first GitHub project
+This is a example repository.
+
+Support markdown syntax format.
+</code></pre><h3 id="134-&#x6DFB;&#x52A0;readmemd&#x6587;&#x4EF6;&#x5E76;&#x63D0;&#x4EA4;&#x3002;">1.3.4. &#x6DFB;&#x52A0;README.md&#x6587;&#x4EF6;&#x5E76;&#x63D0;&#x4EA4;&#x3002;</h3>
+<pre><code>$ git add README.md
+$ git commit -m &quot;README for this project.&quot;
+</code></pre><h3 id="135-&#x5411;github&#x63A8;&#x9001;&#xFF0C;&#x5B8C;&#x6210;&#x7248;&#x672C;&#x5E93;&#x521D;&#x59CB;&#x5316;&#x3002;">1.3.5. &#x5411;GitHub&#x63A8;&#x9001;&#xFF0C;&#x5B8C;&#x6210;&#x7248;&#x672C;&#x5E93;&#x521D;&#x59CB;&#x5316;&#x3002;</h3>
+<pre><code>$ git push origin master
+</code></pre><h3 id="136-&#x4ECE;&#x5DF2;&#x6709;&#x7248;&#x672C;&#x5E93;&#x521B;&#x5EFA;">1.3.6. &#x4ECE;&#x5DF2;&#x6709;&#x7248;&#x672C;&#x5E93;&#x521B;&#x5EFA;</h3>
+<p>&#x5982;&#x679C;&#x5728;GitHub&#x9879;&#x76EE;&#x521D;&#x59CB;&#x5316;&#x4E4B;&#x524D;&#xFF0C;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E8E;&#x672C;&#x5730;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#xFF0C;&#x663E;&#x7136;&#x50CF;&#x4E0A;&#x9762;&#x90A3;&#x6837;&#x5148;&#x514B;&#x9686;&#x3001;&#x518D;&#x63D0;&#x4EA4;&#x3001;&#x540E;&#x63A8;&#x9001;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x4E0D;&#x9002;&#x5B9C;&#x4E86;&#x3002;&#x5E94;&#x8BE5;&#x91C7;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x3002;
+&#x4E3A;&#x8BD5;&#x9A8C;&#x65B0;&#x7684;&#x7248;&#x672C;&#x5E93;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x5148;&#x628A;&#x521A;&#x521A;&#x65B0;&#x5EFA;&#x7684;&#x6D4B;&#x8BD5;&#x9879;&#x76EE;&#x201C;helloworld&#x201D;&#x5220;&#x9664;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x5C06;&#x672C;&#x5730;&#x5DE5;&#x4F5C;&#x533A;&#x4E2D;&#x514B;&#x9686;&#x7684;&#x201C;helloworld&#x201D;&#x5220;&#x9664;&#x3002;&#x8B66;&#x544A;&#xFF1A;&#x5220;&#x9664;&#x9879;&#x76EE;&#x7684;&#x64CD;&#x4F5C;&#x975E;&#x5E38;&#x5371;&#x9669;&#xFF0C;&#x4E0D;&#x53EF;&#x6062;&#x590D;&#xFF0C;&#x614E;&#x7528;&#x3002;
+&#x70B9;&#x51FB;&#x9879;&#x76EE;&#x9996;&#x9875;&#x4E2D;&quot;Settings&quot;&#x9009;&#x9879;&#x5361;&#xFF0C;&#x5728;&quot;Danger Zone&quot;&#x533A;&#x57DF;&#x6709;&quot;Delete this repository&quot;
+&#x7136;&#x540E;&#x518D;&#x91CD;&#x5EFA;&#x7248;&#x672C;&#x5E93;&#x201C;helloworld&#x201D;&#xFF0C;&#x89C1;3.1&#x8282;&#x3002;
+&#x672C;&#x5730;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;Git&#x7248;&#x672C;&#x5E93;&#x3002;</p>
+<pre><code>$ mkdir helloworld
+$ cd helloworld
+$ git init
+</code></pre><p>&#x7136;&#x540E;&#x5728;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x6DFB;&#x52A0;&#x793A;&#x4F8B;&#x6587;&#x4EF6;&#xFF0C;&#x5982;README.md&#x6587;&#x4EF6;&#xFF0C;&#x5185;&#x5BB9;&#x540C;&#x524D;&#x3002;</p>
+<pre><code>$ git add README.md
+$ git commit -m &quot;README for this project.&quot;
+</code></pre><p>&#x4E3A;&#x7248;&#x672C;&#x5E93;&#x6DFB;&#x52A0;&#x540D;&#x4E3A;origin&#x7684;&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#x3002;</p>
+<pre><code>$ git remote add origin git@github.com:gitexample/helloworld.git
+</code></pre><p>&#x6267;&#x884C;&#x63A8;&#x9001;&#x547D;&#x4EE4;&#xFF0C;&#x5B8C;&#x6210;GitHub&#x7248;&#x672C;&#x5E93;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;&#x6CE8;&#x610F;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x7684;-u&#x53C2;&#x6570;&#xFF0C;&#x5728;&#x63A8;&#x9001;&#x6210;&#x529F;&#x540E;&#x81EA;&#x52A8;&#x5EFA;&#x7ACB;&#x672C;&#x5730;&#x5206;&#x652F;&#x4E0E;&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#x5206;&#x652F;&#x7684;&#x8FFD;&#x8E2A;&#x3002;</p>
+<pre><code>$ git push -u origin master
+</code></pre><h2 id="14-&#x64CD;&#x4F5C;&#x7248;&#x672C;&#x5E93;">1.4. &#x64CD;&#x4F5C;&#x7248;&#x672C;&#x5E93;</h2>
+<h3 id="141-&#x5F3A;&#x5236;&#x63A8;&#x9001;">1.4.1. &#x5F3A;&#x5236;&#x63A8;&#x9001;</h3>
+<p>&#x4E0A;&#x6587;&#x63D0;&#x4EA4;&#x65F6;&#xFF0C;&#x63D0;&#x4EA4;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x7684;&#x90AE;&#x4EF6;&#x5730;&#x5740;&#x5E76;&#x975E;gitexample&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x7684;&#x90AE;&#x4EF6;&#x5730;&#x5740;&#x3002;&#x8865;&#x6551;&#x529E;&#x6CD5;&#x5C31;&#x662F;&#x5BF9;&#x6B64;&#x63D0;&#x4EA4;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x7136;&#x540E;&#x5F3A;&#x5236;&#x63A8;&#x9001;&#x5230;GitHub&#x3002;
+&#x91CD;&#x65B0;&#x8BBE;&#x7F6E;core.editor&#xFF0C;user.name&#x548C;user.email&#x914D;&#x7F6E;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code>$ git config --global core.editor vim
+$ git config user.name &quot;gitexample&quot;
+$ git config user.email &quot;gitexample@gmail.com&quot;
+</code></pre><p>&#x6267;&#x884C;Git&#x4FEE;&#x8865;&#x63D0;&#x4EA4;&#x547D;&#x4EE4;&#x3002;
+&#x6CE8;&#x610F;&#x4F7F;&#x7528;&#x53C2;&#x6570;--reset-author&#x4F1A;&#x5C06;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x4E2D;&#x7684;&#x5C5E;&#x6027;Author&#x8FDE;&#x540C;AuthorDate&#x4E00;&#x5E76;&#x4FEE;&#x6539;&#xFF0C;&#x5426;&#x5219;&#x53EA;&#x4FEE;&#x6539;Commit&#x548C;CommitDate&#x3002;&#x53C2;&#x6570;-C HEAD&#x7EF4;&#x6301;&#x63D0;&#x4EA4;&#x8BF4;&#x660E;&#x4E0D;&#x53D8;&#x3002;</p>
+<pre><code>$ git commit --amend --reset-author -C HEAD
+</code></pre><p>&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x65E5;&#x5FD7;&#xFF0C;&#x53D1;&#x73B0;&#x63D0;&#x4EA4;&#x8005;&#x4FE1;&#x606F;&#x548C;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#x90FD;&#x5DF2;&#x7ECF;&#x66F4;&#x6539;&#x3002;</p>
+<pre><code>$ git log --pretty=fuller
+commit 959af4fe61bbdc984dcc26acd139ea3e164096f4
+Author:     gitexample &lt;gitexample@gmail.com&gt;
+AuthorDate: Tue Sep 4 15:58:25 2018 +0800
+Commit:     gitexample &lt;gitexample@gmail.com&gt;
+CommitDate: Tue Sep 4 15:58:25 2018 +0800
+
+    README for this project.
+</code></pre><p>&#x4F7F;&#x7528;&#x5F3A;&#x5236;&#x63A8;&#x9001;&#x3002;</p>
+<pre><code>$ git push -f origin master
+</code></pre><h3 id="142-&#x65B0;&#x5EFA;&#x5206;&#x652F;">1.4.2. &#x65B0;&#x5EFA;&#x5206;&#x652F;</h3>
+<p>Git&#x7684;&#x5206;&#x652F;&#x5C31;&#x662F;&#x4FDD;&#x5B58;&#x5728;.git/refs/heads/&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x7684;&#x5F15;&#x7528;&#x3002;&#x5F15;&#x7528;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x8BE5;&#x5206;&#x652F;&#x5BF9;&#x5E94;&#x7684;&#x63D0;&#x4EA4;ID&#x3002;&#x5F53;&#x524D;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;&#x5206;&#x652F;master&#x5C31;&#x5BF9;&#x5E94;&#x4E8E;&#x6587;&#x4EF6;.git/refs/heads/master&#x3002;
+&#x82E5;&#x5728;GitHub&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x5206;&#x652F;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x5728;&#x672C;&#x5730;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5206;&#x652F;&#xFF08;&#x5373;&#x5F15;&#x7528;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x63A8;&#x9001;&#x547D;&#x4EE4;&#x5C06;&#x672C;&#x5730;&#x521B;&#x5EFA;&#x7684;&#x65B0;&#x7684;&#x5F15;&#x7528;&#x8FDE;&#x540C;&#x6240;&#x6307;&#x5411;&#x7684;&#x63D0;&#x4EA4;&#x63A8;&#x9001;&#x5230;GitHub&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x5B8C;&#x6210;GitHub&#x4E0A;&#x5206;&#x652F;&#x7684;&#x521B;&#x5EFA;&#x3002;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#xFF1A;
+&#x672C;&#x5730;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x5EFA;&#x7ACB;&#x65B0;&#x5206;&#x652F;mybranch1&#x3002;
+&#x521B;&#x5EFA;&#x5206;&#x652F;&#x6709;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x4F7F;&#x7528;git branch&#x547D;&#x4EE4;&#xFF0C;&#x4F46;&#x6700;&#x4E3A;&#x4FBF;&#x6377;&#x7684;&#x5C31;&#x662F;git checkout -b&#x547D;&#x4EE4;&#xFF0C;&#x540C;&#x65F6;&#x5B8C;&#x6210;&#x65B0;&#x5206;&#x652F;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x5206;&#x652F;&#x5207;&#x6362;&#x3002;</p>
+<pre><code>$ git checkout -b mybranch1
+Switched to a new branch &apos;mybranch1&apos;
+</code></pre><p>&#x4E3A;&#x4E86;&#x6613;&#x4E8E;&#x8BC6;&#x522B;&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;hello1&#xFF0C;&#x5E76;&#x63D0;&#x4EA4;&#x3002;</p>
+<pre><code>$ touch hello1
+$ echo &quot;How are you!&quot; &gt; hello1 
+$ git add hello1 
+$ git commit -m &quot;add hello1.&quot;
+[mybranch1 f65bdb4] add hello1.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello1
+</code></pre><p>&#x901A;&#x8FC7;&#x63A8;&#x9001;&#x547D;&#x4EE4;&#xFF0C;&#x5C06;&#x672C;&#x5730;&#x5206;&#x652F;mybranch1&#x63A8;&#x9001;&#x5230;GitHub&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x5B8C;&#x6210;&#x5728;GitHub&#x4E0A;&#x7684;&#x65B0;&#x5206;&#x652F;&#x521B;&#x5EFA;&#x3002;</p>
+<pre><code>$ git push -u origin mybranch1
+</code></pre><p>&#x5728;GitHub&#x4E0A;&#x67E5;&#x770B;&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x4F1A;&#x770B;&#x5230;&#x65B0;&#x589E;&#x4E86;&#x4E00;&#x4E2A;&#x5206;&#x652F;mybranch1&#xFF0C;&#x4E0D;&#x8FC7;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x4ECD;&#x4E3A;master&#x3002;</p>
+<h3 id="143-&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x5206;&#x652F;">1.4.3. &#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x5206;&#x652F;</h3>
+<p>&#x5728;&quot;Settings&quot;&#x9009;&#x9879;&#x5361;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;Default branch&#x3002;
+&#x4FEE;&#x6539;&#x4E86;GitHub&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x518D;&#x4ECE;GitHub&#x514B;&#x9686;&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x672C;&#x5730;&#x514B;&#x9686;&#x540E;&#x7248;&#x672C;&#x5E93;&#x7684;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x4E5F;&#x5C06;&#x6539;&#x53D8;&#x3002;</p>
+<pre><code>$ git clone git@github.com:gitexample/helloworld.git helloworld-branch1
+Cloning into &apos;helloworld-branch1&apos;...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+Checking connectivity... done.
+$ cd helloworld-branch1/
+$ git branch
+</code></pre><p>&#x5B9E;&#x9645;&#x4E0A;&#x4FEE;&#x6539;GitHub&#x4E0A;&#x7248;&#x672C;&#x5E93;&#x7684;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#xFF0C;&#x5C31;&#x662F;&#x5C06;GitHub&#x7248;&#x672C;&#x5E93;&#x7684;&#x5934;&#x6307;&#x9488;HEAD&#x6307;&#x5411;&#x4E86;&#x5176;&#x4ED6;&#x5206;&#x652F;&#xFF0C;&#x5982;mybranch1&#x5206;&#x652F;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x4ECE;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x770B;&#x51FA;&#x3002;</p>
+<pre><code>$ cd helloworld-branch1/
+$ git branch -r
+  origin/HEAD -&gt; origin/mybranch1
+  origin/master
+  origin/mybranch1
+$ cd helloworld-master/
+$ git branch -r
+  origin/HEAD -&gt; origin/master
+  origin/master
+  origin/mybranch1
+</code></pre><h3 id="144-&#x5220;&#x9664;&#x5206;&#x652F;">1.4.4. &#x5220;&#x9664;&#x5206;&#x652F;</h3>
+<p>&#x4E0D;&#x80FD;&#x5220;&#x9664;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x5206;&#x652F;&#x3002;&#x56E0;&#x6B64;&#x5148;&#x5207;&#x6362;&#x5230;&#x5176;&#x4ED6;&#x5206;&#x652F;&#xFF0C;&#x4F8B;&#x5982;&#x4ECE;GitHub&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x53D6;&#x51FA;master&#x5206;&#x652F;&#x5E76;&#x5207;&#x6362;&#x3002;</p>
+<pre><code>$ cd helloworld-branch1/
+$ git branch
+  master
+* mybranch1
+$ git checkout master
+Switched to branch &apos;master&apos;
+Your branch is up-to-date with &apos;origin/master&apos;.
+$ git branch
+* master
+  mybranch1
+</code></pre><p>&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x5220;&#x9664;mybanch1&#x5206;&#x652F;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E4B;&#x6240;&#x4EE5;&#x4F7F;&#x7528;-D&#x53C2;&#x6570;&#xFF0C;&#x800C;&#x975E;-d&#x53C2;&#x6570;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;Git&#x5728;&#x5220;&#x9664;&#x5206;&#x652F;&#x65F6;&#x4E3A;&#x907F;&#x514D;&#x6570;&#x636E;&#x4E22;&#x5931;&#xFF0C;&#x9ED8;&#x8BA4;&#x7981;&#x6B62;&#x5220;&#x9664;&#x5C1A;&#x672A;&#x5408;&#x5E76;&#x7684;&#x5206;&#x652F;&#x3002;&#x53C2;&#x6570;-D&#x5219;&#x53EF;&#x5F3A;&#x5236;&#x5220;&#x9664;&#x5C1A;&#x672A;&#x5408;&#x5E76;&#x7684;&#x5206;&#x652F;&#x3002;</p>
+<pre><code>$ git branch -D mybranch1
+Deleted branch mybranch1 (was f46a284).
+</code></pre><p>&#x73B0;&#x5728;&#x53EA;&#x662F;&#x672C;&#x5730;&#x5206;&#x652F;&#x88AB;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x8FDC;&#x7A0B;GitHub&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;mybranch1&#x5206;&#x652F;&#x5C1A;&#x5728;&#x3002;&#x5220;&#x9664;&#x8FDC;&#x7A0B;GitHub&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x7684;&#x5206;&#x652F;&#x5C31;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;git branch&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x662F;&#x8981;&#x4F7F;&#x7528;git push&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x4E14;&#x8981;&#x5148;&#x5728;GitHub&#x4E0A;&#x628A;&#x9ED8;&#x8BA4;&#x5206;&#x652F;&#x5207;&#x6362;&#x5230;mater&#x3002;&#x5728;&#x4F7F;&#x7528;&#x63A8;&#x9001;&#x5206;&#x652F;&#x547D;&#x4EE4;&#x65F6;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5F15;&#x7528;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x5192;&#x53F7;&#x524D;&#x4E3A;&#x7A7A;&#xFF09;&#x3002;</p>
+<pre><code>$ git push origin :mybranch1
+</code></pre><h3 id="145-&#x91CC;&#x7A0B;&#x7891;&#x7BA1;&#x7406;">1.4.5. &#x91CC;&#x7A0B;&#x7891;&#x7BA1;&#x7406;</h3>
+<p>&#x91CC;&#x7A0B;&#x7891;&#x5373;tag&#xFF0C;&#x5176;&#x7BA1;&#x7406;&#x548C;&#x5206;&#x652F;&#x7BA1;&#x7406;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x3002;&#x91CC;&#x7A0B;&#x7891;&#x548C;&#x5206;&#x652F;&#x4E00;&#x6837;&#x4E5F;&#x662F;&#x4EE5;&#x5F15;&#x7528;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x5728;&#x7684;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;.git/refs/tags/&#x8DEF;&#x5F84;&#x4E0B;&#x3002;&#x5F15;&#x7528;&#x53EF;&#x80FD;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#xFF0C;&#x4F46;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#xFF08;Tag&#x5BF9;&#x8C61;&#xFF09;&#x3002;</p>
+<ol>
+<li>&#x8F7B;&#x91CF;&#x7EA7;&#x91CC;&#x7A0B;&#x7891;&#xFF1A;&#x7528;git tag <tagname> [<commit>] &#x547D;&#x4EE4;&#x521B;&#x5EFA;&#xFF0C;&#x5F15;&#x7528;&#x76F4;&#x63A5;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x63D0;&#x4EA4;&#x5BF9;&#x8C61;<commit>&#x3002;</commit></commit></tagname></li>
+<li>&#x5E26;&#x8BF4;&#x660E;&#x7684;&#x91CC;&#x7A0B;&#x7891;&#xFF1A;&#x7528;git tag -a <tagname> [<commit>] &#x547D;&#x4EE4;&#x521B;&#x5EFA;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x521B;&#x5EFA;&#x65F6;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x521B;&#x5EFA;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x8BF4;&#x660E;&#x3002;Git&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;tag&#x5BF9;&#x8C61;&#x4FDD;&#x5B58;&#x91CC;&#x7A0B;&#x7891;&#x8BF4;&#x660E;&#x3001;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x6307;&#x5411;&#x3001;&#x521B;&#x5EFA;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x7528;&#x6237;&#x7B49;&#x4FE1;&#x606F;&#xFF0C;&#x91CC;&#x7A0B;&#x7891;&#x5F15;&#x7528;&#x6307;&#x5411;&#x8BE5;Tag&#x5BF9;&#x8C61;&#x3002;</commit></tagname></li>
+<li>&#x5E26;&#x7B7E;&#x540D;&#x7684;&#x91CC;&#x7A0B;&#x7891;&#xFF1A;&#x7528;git tag -s <tagname> [<commit>] &#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x3002;&#x662F;&#x5728;&#x5E26;&#x8BF4;&#x660E;&#x7684;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x5F15;&#x5165;&#x4E86;PGP&#x7B7E;&#x540D;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x6240;&#x521B;&#x5EFA;&#x7684;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x548C;&#x4E0D;&#x53EF;&#x62D2;&#x7EDD;&#x6027;&#x3002;</commit></tagname></li>
+</ol>
+<p>&#x4E0B;&#x9762;&#x6F14;&#x793A;&#x4E00;&#x4E0B;&#x91CC;&#x7A0B;&#x7891;&#x7684;&#x521B;&#x5EFA;&#x548C;&#x7BA1;&#x7406;&#x3002;</p>
+<ol>
+<li>&#x5148;&#x5728;&#x672C;&#x5730;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x63D0;&#x4EA4;&#x3002;<pre><code>$ touch hello1
+$ git add hello1
+$ git commit -m &quot;add hello1 for mark.&quot;
+</code></pre></li>
+<li>&#x672C;&#x5730;&#x521B;&#x5EFA;&#x91CC;&#x7A0B;&#x7891;mytag1&#x3001;mytag2&#x548C;mytag3&#x3002;<pre><code>$ git tag -m &quot;Tag on initial commit&quot; mytag1 HEAD^
+$ git tag -m &quot;Tag on new commit&quot;     mytag2
+$ git tag mytag3
+</code></pre></li>
+<li>&#x67E5;&#x770B;&#x65B0;&#x5EFA;&#x7ACB;&#x7684;&#x91CC;&#x7A0B;&#x7891;&#x3002;<pre><code>$ git tag -l -n1
+mytag1          Tag on initial commit
+mytag2          Tag on new commit
+mytag3          add hello1 for mark.
+</code></pre></li>
+<li>&#x5C06;&#x672C;&#x5730;&#x91CC;&#x7A0B;&#x7891;&#x63A8;&#x9001;&#x5230;GitHub&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#x3002;<pre><code>$ git push origin refs/tags/*
+Counting objects: 6, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 548 bytes, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To git@github.com:gotgithub/helloworld.git
+* [new tag]         mytag1 -&gt; mytag1
+* [new tag]         mytag2 -&gt; mytag2
+* [new tag]         mytag3 -&gt; mytag3
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x672C;&#x5730;&#x91CC;&#x7A0B;&#x7891;&#x3002;<pre><code>$ git tag -d mytag3
+Deleted tag &apos;mytag3&apos; (was c71231c)
+</code></pre></li>
+<li>&#x5220;&#x9664;GitHub&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x7684;&#x91CC;&#x7A0B;&#x7891;&#x3002;<pre><code>$ git push origin :mytag3
+To git@github.com:gotgithub/helloworld.git
+[deleted]         mytag3
+</code></pre></li>
+</ol>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x7248;&#x672C;&#x5E93;&#x8FD8;&#x53EF;&#x4EE5;&#x4E0E;&#x4E00;&#x4E9B;&#x6269;&#x5C55;&#x5E94;&#x7528;&#x5EFA;&#x7ACB;&#x8054;&#x7CFB;&#xFF0C;&#x6BD4;&#x5982;&#x8DDF;Email &#x548C;Redmine&#x6574;&#x5408;&#xFF0C;Email&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65B0;&#x63D0;&#x4EA4;&#x63A8;&#x9001;&#x81F3;&#x7248;&#x672C;&#x5E93;&#x65F6;&#xFF0C;&#x53D1;&#x9001;&#x901A;&#x77E5;&#x90AE;&#x4EF6;&#x3002;Redmine&#x53EF;&#x4EE5;&#x548C;&#x591A;&#x79CD;&#x7248;&#x672C;&#x5E93;&#xFF08;&#x5305;&#x62EC;Git&#xFF09;&#x6574;&#x5408;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;Web&#x754C;&#x9762;&#x6D4F;&#x89C8;Git&#x63D0;&#x4EA4;&#xFF0C;&#x8FD8;&#x5B9E;&#x73B0;&#x4E86;&#x63D0;&#x4EA4;&#x548C;&#x95EE;&#x9898;&#x7684;&#x5173;&#x8054;&#x3002;</p>
+<h2 id="15-&#x5EFA;&#x7ACB;&#x4E3B;&#x9875;">1.5. &#x5EFA;&#x7ACB;&#x4E3B;&#x9875;</h2>
+<h3 id="151-&#x521B;&#x5EFA;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;">1.5.1. &#x521B;&#x5EFA;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;</h3>
+<p>GitHub &#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x5206;&#x914D;&#x4E86;&#x4E00;&#x4E2A;&#x4E8C;&#x7EA7;&#x57DF;&#x540D;<user-id>.github.io&#xFF0C;&#x7528;&#x6237;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x4E8C;&#x7EA7;&#x57DF;&#x540D;&#x521B;&#x5EFA;&#x4E3B;&#x9875;&#x5F88;&#x5BB9;&#x6613;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x6258;&#x7BA1;&#x7A7A;&#x95F4;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<user-id>.github.io&#x7684;&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x5411;&#x5176;master&#x5206;&#x652F;&#x63D0;&#x4EA4;&#x7F51;&#x7AD9;&#x9759;&#x6001;&#x9875;&#x9762;&#x5373;&#x53EF;&#xFF0C;&#x5176;&#x4E2D;&#x7F51;&#x7AD9;&#x9996;&#x9875;&#x4E3A;index.html&#x3002;&#x4E0B;&#x9762;&#x4EE5;gitexample&#x7528;&#x6237;&#x4E3A;&#x4F8B;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#x3002;</user-id></user-id></p>
+<ol>
+<li>&#x7528;&#x6237;gitexample&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;gitexample.github.io&#x7684;Git&#x7248;&#x672C;&#x5E93;&#x3002;</li>
+<li>&#x5728;&#x672C;&#x5730;&#x514B;&#x9686;&#x65B0;&#x5EFA;&#x7ACB;&#x7684;&#x7248;&#x672C;&#x5E93;&#x3002;<pre><code>$ git clone git@github.com:gitexample/gitexample.github.io.git gitexample.github.io
+Cloning into &apos;gitexample.github.io&apos;...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
+$ cd gitexample.github.io/
+</code></pre></li>
+<li>&#x5728;&#x7248;&#x672C;&#x5E93;&#x6839;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x6587;&#x4EF6;index.html&#x4F5C;&#x4E3A;&#x9996;&#x9875;&#x3002;<pre><code>$ printf &quot;&lt;h1&gt;gitexample&apos;s HomePage&lt;/h1&gt;It works.\n&quot; &gt; index.html
+</code></pre></li>
+<li>&#x63D0;&#x4EA4;<pre><code>$ git add index.html
+$ git commit -m &quot;Homepage test version.&quot;
+</code></pre></li>
+<li>&#x63A8;&#x9001;&#x5230;GitHub&#xFF0C;&#x5B8C;&#x6210;&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#x521B;&#x5EFA;&#x3002;<pre><code>$ git push origin master
+</code></pre></li>
+<li>&#x8BBF;&#x95EE;&#x7F51;&#x5740;&#xFF1A; <a href="http://gitexample.github.io/" target="_blank">http://gitexample.github.io/</a> &#x3002;</li>
+</ol>
+<h3 id="152-&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x4E3B;&#x9875;">1.5.2. &#x521B;&#x5EFA;&#x9879;&#x76EE;&#x4E3B;&#x9875;</h3>
+<p>&#x5982;&#x524D;&#x6240;&#x8FF0;&#xFF0C;GitHub&#x4F1A;&#x4E3A;&#x6BCF;&#x4E2A;&#x8D26;&#x53F7;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x4E8C;&#x7EA7;&#x57DF;&#x540D;<user-id>.github.io&#x4F5C;&#x4E3A;&#x7528;&#x6237;&#x7684;&#x9996;&#x9875;&#x5730;&#x5740;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x8FD8;&#x53EF;&#x4EE5;&#x4E3A;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x4E3B;&#x9875;&#xFF0C;&#x9879;&#x76EE;&#x4E3B;&#x9875;&#x4E5F;&#x901A;&#x8FC7;&#x6B64;&#x4E8C;&#x7EA7;&#x57DF;&#x540D;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x3002;</user-id></p>
+<p>&#x4F8B;&#x5982;gitexample&#x7528;&#x6237;&#x521B;&#x5EFA;&#x7684;helloworld&#x9879;&#x76EE;&#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;&#x9879;&#x76EE;&#x4E3B;&#x9875;&#xFF0C;&#x5219;&#x53EF;&#x901A;&#x8FC7;&#x7F51;&#x5740;<a href="http://gitexample.github.io/helloworld/&#x8BBF;&#x95EE;&#x3002;" target="_blank">http://gitexample.github.io/helloworld/&#x8BBF;&#x95EE;&#x3002;</a></p>
+<p>&#x4E3A;&#x9879;&#x76EE;&#x542F;&#x7528;&#x9879;&#x76EE;&#x4E3B;&#x9875;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728;&#x9879;&#x76EE;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;gh-pages&#x7684;&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x5411;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x9759;&#x6001;&#x7F51;&#x9875;&#x5373;&#x53EF;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C;&#x9879;&#x76EE;&#x7684;Git&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x540D;&#x4E3A;gh-pages&#x5206;&#x652F;&#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x8868;&#x660E;&#x8BE5;&#x9879;&#x76EE;&#x63D0;&#x4F9B;&#x9759;&#x6001;&#x7F51;&#x9875;&#x6784;&#x6210;&#x7684;&#x4E3B;&#x9875;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F51;&#x5740;http://<user-id>.github.io/<project-name>&#x8BBF;&#x95EE;&#x5230;&#x3002;</project-name></user-id></p>
+<p>&#x4E0B;&#x9762;&#x4EE5;&#x7528;&#x6237;gitexample&#x7684;&#x9879;&#x76EE;helloworld&#x4E3A;&#x4F8B;&#xFF0C;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x7EF4;&#x62A4;&#x9879;&#x76EE;&#x4E3B;&#x9875;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x672C;&#x5730;&#x5C1A;&#x672A;&#x4ECE;GitHub&#x514B;&#x9686;helloworld&#x7248;&#x672C;&#x5E93;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code>$ git clone git@github.com:gitexample/helloworld.git
+$ cd helloworld
+</code></pre><p>&#x5F53;&#x524D;&#x7248;&#x672C;&#x5E93;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;master&#x7684;&#x5206;&#x652F;&#xFF0C;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x4ECE;master&#x5206;&#x652F;&#x521B;&#x5EFA;gh-pages&#x5206;&#x652F;&#x64CD;&#x4F5C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x662F;&#x4F5C;&#x4E3A;&#x4FDD;&#x5B58;&#x7F51;&#x9875;&#x7684;gh-pages&#x5206;&#x652F;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x548C;master&#x5206;&#x652F;&#x4E2D;&#x7684;&#x53EF;&#x80FD;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5E0C;&#x671B;gh-pages&#x5206;&#x652F;&#x7EE7;&#x627F;master&#x5206;&#x652F;&#x7684;&#x5386;&#x53F2;&#x548C;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x60F3;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5E72;&#x51C0;&#x7684;gh-pages&#x5206;&#x652F;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x70B9;&#x5C0F;&#x6280;&#x5DE7;&#x3002;</p>
+<p>&#x82E5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;&#x5E72;&#x51C0;&#x7684;gh-pages&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x4E0B;&#x9762;&#x4E09;&#x4E2A;&#x65B9;&#x6CD5;&#x4EFB;&#x9009;&#x4E00;&#x79CD;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x7528;&#x5230;&#x4E24;&#x4E2A;Git&#x5E95;&#x5C42;&#x547D;&#x4EE4;&#xFF1A;git write-tree&#x548C;git commit-tree&#x3002;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li>&#x57FA;&#x4E8E;master&#x5206;&#x652F;&#x5EFA;&#x7ACB;&#x5206;&#x652F;gh-pages&#x3002;<pre><code>$ git checkout -b gh-pages
+</code></pre></li>
+<li>&#x5220;&#x9664;&#x6682;&#x5B58;&#x533A;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x76F8;&#x5F53;&#x4E8E;&#x6E05;&#x7A7A;&#x6682;&#x5B58;&#x533A;&#x3002;<pre><code>$ rm .git/index
+</code></pre></li>
+<li>&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x9996;&#x9875;index.html&#x3002;<pre><code>$ printf &quot;hello world.\n&quot; &gt; index.html
+</code></pre></li>
+<li>&#x6DFB;&#x52A0;&#x6587;&#x4EF6;index.html&#x5230;&#x6682;&#x5B58;&#x533A;&#x3002;<pre><code>$ git add index.html
+</code></pre></li>
+<li>&#x7528;Git&#x5E95;&#x5C42;&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x6839;&#x63D0;&#x4EA4;&#xFF0C;&#x5E76;&#x5C06;&#x5206;&#x652F;gh-pages&#x91CD;&#x7F6E;&#x3002;<pre><code>$ git reset --hard $(echo &quot;branch gh-pages init.&quot; | git commit-tree $(git write-tree))
+</code></pre></li>
+<li>&#x6267;&#x884C;&#x63A8;&#x9001;&#x547D;&#x4EE4;&#xFF0C;&#x5728;GitHub&#x8FDC;&#x7A0B;&#x7248;&#x672C;&#x5E93;&#x521B;&#x5EFA;&#x5206;&#x652F;gh-pages&#x3002;<pre><code>$ git push -u origin gh-pages
+</code></pre>&#x7A0D;&#x540E;&#xFF0C;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x4E0B;&#x9762;&#x7684;&#x5730;&#x5740;&#x5373;&#x53EF;&#x770B;&#x5230;&#x521A;&#x521A;&#x63D0;&#x4EA4;&#x7684;&#x9879;&#x76EE;&#x9996;&#x9875;&#xFF1A; <a href="http://gitexample.github.io/helloworld/" target="_blank">http://gitexample.github.io/helloworld/</a> &#x3002;
+&#x5F53;&#x7136;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x521B;&#x5EFA;&#x65B9;&#x6CD5;&#xFF0C;&#x8BE6;&#x89C1;&#xFF1A;<a href="http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html" target="_blank">GotGitHub</a></li>
+</ol>
+<h1 id="2-gitbook">2. GitBook</h1>
+<p>&#x672C;&#x6587;&#x4EE5;Ubuntu 14.04.5 LTS&#x4E3A;&#x4F8B;&#x5B89;&#x88C5;&#x3002;</p>
+<h2 id="21-&#x5B89;&#x88C5;nodejs">2.1. &#x5B89;&#x88C5;nodejs</h2>
+<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x5B89;&#x88C5; nodejs&#xFF0C;&#x4EE5;&#x4FBF;&#x80FD;&#x591F;&#x4F7F;&#x7528; npm &#x6765;&#x5B89;&#x88C5; gitbook&#x3002;
+&#x4ECE;URL: <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a>&#x4E0B;&#x8F7D;Linux&#x7248;&#x672C;&#x7684;nodejs&#xFF0C;&#x6211;&#x4E0B;&#x8F7D;&#x7684;&#x662F;node-v8.11.4-linux-x64.tar.xz&#x3002;</p>
+<pre><code>$ xz -d node-v8.11.4-linux-x64.tar.zx
+$ tar xvf node-v8.11.4-linux-x64.tar
+$ sudo cp node-v8.11.4-linux-x64 /opt/
+$ sudo chmod 640 /etc/sudoers
+$ sudo vi /etc/sudoers
+
+Defaults    secure_path=&quot;/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/node-v8.11.4-linux-x64/bin/&quot;
+
+$ sudo chmod 440 /etc/sudoers
+</code></pre><p>&#x91CD;&#x542F;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h2 id="22-&#x5B89;&#x88C5;gitbook">2.2. &#x5B89;&#x88C5;gitbook</h2>
+<pre><code>$ sudo npm install -g gitbook-cli
+</code></pre><h2 id="23-&#x57FA;&#x672C;&#x4F7F;&#x7528;">2.3. &#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<p>gitbook &#x7684;&#x57FA;&#x672C;&#x7528;&#x6CD5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x5C31;&#x53EA;&#x6709;&#x4E24;&#x6B65;&#xFF1A;</p>
+<p>&#x4F7F;&#x7528; gitbook init &#x521D;&#x59CB;&#x5316;&#x4E66;&#x7C4D;&#x76EE;&#x5F55;
+&#x4F7F;&#x7528; gitbook serve &#x7F16;&#x8BD1;&#x4E66;&#x7C4D;
+&#x4E0B;&#x9762;&#x5C06;&#x7ED3;&#x5408;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6765;&#x4ECB;&#x7ECD; gitbook &#x7684;&#x57FA;&#x672C;&#x7528;&#x6CD5;&#x3002;</p>
+<h3 id="231-gitbook-init">2.3.1. gitbook init</h3>
+<p>&#x9996;&#x5148;&#xFF0C;&#x521B;&#x5EFA;&#x5982;&#x4E0B;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;</p>
+<pre><code>$ tree book/
+book/
+&#x251C;&#x2500;&#x2500; README.md
+&#x2514;&#x2500;&#x2500; SUMMARY.md
+
+0 directories, 2 files
+</code></pre><p>README.md &#x548C; SUMMARY.md &#x662F;&#x4E24;&#x4E2A;&#x5FC5;&#x987B;&#x6587;&#x4EF6;&#xFF0C;README.md &#x662F;&#x5BF9;&#x4E66;&#x7C4D;&#x7684;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#xFF1A;</p>
+<pre><code>$ cat book/README.md 
+
+This is a book powered by [GitBook](https://github.com/GitbookIO/gitbook).
+</code></pre><p>SUMMARY.md &#x662F;&#x4E66;&#x7C4D;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x3002;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$ cat book/SUMMARY.md 
+
+* [Chapter1](chapter1/README.md)
+  * [Section1.1](chapter1/section1.1.md)
+  * [Section1.2](chapter1/section1.2.md)
+* [Chapter2](chapter2/README.md)
+</code></pre><p>&#x521B;&#x5EFA;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x4F7F;&#x7528; gitbook init&#xFF0C;&#x5B83;&#x4F1A;&#x4E3A;&#x6211;&#x4EEC;&#x521B;&#x5EFA; SUMMARY.md &#x4E2D;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code>$ cd book
+$ gitbook init
+$ tree
+.
+&#x251C;&#x2500;&#x2500; chapter1
+&#x2502;   &#x251C;&#x2500;&#x2500; README.md
+&#x2502;   &#x251C;&#x2500;&#x2500; section1.1.md
+&#x2502;   &#x2514;&#x2500;&#x2500; section1.2.md
+&#x251C;&#x2500;&#x2500; chapter2
+&#x2502;   &#x2514;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; README.md
+&#x2514;&#x2500;&#x2500; SUMMARY.md
+
+2 directories, 6 files
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;&#x6211;&#x7684;&#x5B9E;&#x9A8C;&#x4E2D;&#xFF0C;gitbook init &#x53EA;&#x652F;&#x6301;&#x4E24;&#x7EA7;&#x76EE;&#x5F55;&#xFF01;</p>
+<h3 id="232-gitbook-serve">2.3.2. gitbook serve</h3>
+<p>&#x4E66;&#x7C4D;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; gitbook serve &#x6765;&#x7F16;&#x8BD1;&#x548C;&#x9884;&#x89C8;&#x4E66;&#x7C4D;&#x4E86;&#xFF1A;</p>
+<pre><code>$ gitbook serve
+Live reload server started on port: 35729
+Press CTRL+C to quit ...
+
+info: 7 plugins are installed 
+info: loading plugin &quot;livereload&quot;... OK 
+info: loading plugin &quot;highlight&quot;... OK 
+info: loading plugin &quot;search&quot;... OK 
+info: loading plugin &quot;lunr&quot;... OK 
+info: loading plugin &quot;sharing&quot;... OK 
+info: loading plugin &quot;fontsettings&quot;... OK 
+info: loading plugin &quot;theme-default&quot;... OK 
+info: found 5 pages 
+info: found 0 asset files 
+info: &gt;&gt; generation finished with success in 1.1s ! 
+
+Starting server ...
+Serving book on http://localhost:4000
+</code></pre><p><code>gitbook serve</code> &#x547D;&#x4EE4;&#x5B9E;&#x9645;&#x4E0A;&#x4F1A;&#x9996;&#x5148;&#x8C03;&#x7528; <code>gitbook build</code> &#x7F16;&#x8BD1;&#x4E66;&#x7C4D;&#xFF0C;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#x4F1A;&#x6253;&#x5F00;&#x4E00;&#x4E2A; web &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x76D1;&#x542C;&#x5728;&#x672C;&#x5730;&#x7684; 4000 &#x7AEF;&#x53E3;&#x3002;
+&#x73B0;&#x5728;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00; <a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000</a> &#x67E5;&#x770B;&#x4E66;&#x7C4D;&#x7684;&#x6548;&#x679C;&#x3002;
+&#x73B0;&#x5728;&#xFF0C;gitbook &#x4E3A;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E66;&#x7C4D;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5411;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x771F;&#x6B63;&#x7684;&#x5185;&#x5BB9;&#x4E86;&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x7F16;&#x5199;&#x4F7F;&#x7528; markdown &#x8BED;&#x6CD5;&#xFF0C;&#x5728;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#xFF0C;<code>gitbook serve</code> &#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x6301;&#x7EED;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x6765;&#x67E5;&#x770B;&#x6700;&#x65B0;&#x7684;&#x4E66;&#x7C4D;&#x6548;&#x679C;&#xFF01;
+&#x53E6;&#x5916;&#xFF0C;&#x7528;&#x6237;&#x8FD8;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D; <a href="https://github.com/GitbookIO/editor" target="_blank">gitbook &#x7F16;&#x8F91;&#x5668;</a>&#xFF0C;&#x505A;&#x5230;&#x6240;&#x89C1;&#x5373;&#x6240;&#x5F97;&#x7684;&#x7F16;&#x8F91;</p>
+<h1 id="3-github--gitbook&#x7BA1;&#x7406;&#x56FE;&#x4E66;">3. GitHub + GitBook&#x7BA1;&#x7406;&#x56FE;&#x4E66;</h1>
+<h2 id="31-&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#x5B58;&#x50A8;">3.1. &#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#x5B58;&#x50A8;</h2>
+<p>&#x4F7F;&#x7528;github&#x63D0;&#x4F9B;&#x7684;git&#x4ED3;&#x5E93;&#x7BA1;&#x7406;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#xFF0C;&#x589E;&#x52A0;&#x3001;&#x4FEE;&#x6539;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#xFF0C;&#x63D0;&#x4EA4;&#x81F3;git&#x4ED3;&#x5E93;&#x5373;&#x53EF;&#x3002;</p>
+<ol>
+<li>github&#x4E0A;&#x521B;&#x5EFA;&#x4ED3;&#x5E93;arm-cm4-guide</li>
+<li>checkout arm-cm4-guide&#x5230;&#x672C;&#x5730;<pre><code>$ git clone git@github.com:gitexample/arm-cm4-guide.git arm-cm4-guide
+</code></pre></li>
+<li>&#x7F16;&#x5199;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;</li>
+</ol>
+<pre><code>$ cd arm-cm4-guide/
+$ cat README.md 
+
+ARM Cortex-M3&#x4E0E;Cortex-M4&#x6743;&#x5A01;&#x6307;&#x5357;&#xFF08;&#x7B2C;&#x4E09;&#x7248;&#xFF09;
+
+$ cat SUMMARY.md 
+
+* [ARM Cortex-M &#x5904;&#x7406;&#x5668;&#x7B80;&#x4ECB;](chapter1/README.md)
+    * [&#x4EC0;&#x4E48;&#x662F;ARM Cortex-M&#x5904;&#x7406;&#x5668;](chapter1/section1.md)
+        * [Cortex-M&#x5904;&#x7406;&#x5668;&#x5BB6;&#x65CF;](chapter1/section1.1.md)
+        * [&#x5904;&#x7406;&#x5668;&#x548C;&#x5FAE;&#x63A7;&#x5236;&#x5668;&#x7684;&#x533A;&#x522B;](chapter1/section1.2.md)
+    * [ARM Cortex-M&#x5904;&#x7406;&#x5668;&#x7684;&#x4F18;&#x52BF;](chapter1/section2.md)
+        * [&#x4F4E;&#x529F;&#x8017;](chapter2/section2.1.md)
+        * [&#x4EE3;&#x7801;&#x5BC6;&#x5EA6;](chapter2/section2.2.md)
+$ tree
+.
+&#x251C;&#x2500;&#x2500; README.md
+&#x2514;&#x2500;&#x2500; SUMMARY.md
+
+0 directories, 2 files
+
+$ gitbook init
+info: create chapter1/README.md 
+info: create chapter1/section1.md 
+info: create chapter1/section1.1.md 
+info: create chapter1/section1.2.md 
+info: create chapter1/section2.md 
+info: create chapter2/section2.1.md 
+info: create chapter2/section2.2.md 
+info: create SUMMARY.md 
+info: initialization is finished
+
+$ tree
+.
+&#x251C;&#x2500;&#x2500; chapter1
+&#x2502;   &#x251C;&#x2500;&#x2500; README.md
+&#x2502;   &#x251C;&#x2500;&#x2500; section1.1.md
+&#x2502;   &#x251C;&#x2500;&#x2500; section1.2.md
+&#x2502;   &#x251C;&#x2500;&#x2500; section1.md
+&#x2502;   &#x2514;&#x2500;&#x2500; section2.md
+&#x251C;&#x2500;&#x2500; chapter2
+&#x2502;   &#x251C;&#x2500;&#x2500; section2.1.md
+&#x2502;   &#x2514;&#x2500;&#x2500; section2.2.md
+&#x251C;&#x2500;&#x2500; README.md
+&#x2514;&#x2500;&#x2500; SUMMARY.md
+
+2 directories, 9 files
+</code></pre><ol>
+<li>&#x63D0;&#x4EA4;&#x5230;arm-cm4-guide&#x4ED3;&#x5E93;</li>
+</ol>
+<pre><code>$ git add README.md SUMMARY.md chapter1/ chapter2/
+$ git commit -m &quot;add book content.&quot;
+$ git push origin master
+</code></pre><h2 id="32-&#x6784;&#x5EFA;&#x4E66;&#x7C4D;">3.2. &#x6784;&#x5EFA;&#x4E66;&#x7C4D;</h2>
+<p>&#x9996;&#x5148;&#xFF0C;&#x4F7F;&#x7528; gitbook build &#x5C06;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#x8F93;&#x51FA;&#x5230;&#x9ED8;&#x8BA4;&#x76EE;&#x5F55;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684; _book &#x76EE;&#x5F55;&#x3002;</p>
+<pre><code>$ gitbook build
+info: 7 plugins are installed 
+info: 6 explicitly listed 
+info: loading plugin &quot;highlight&quot;... OK 
+info: loading plugin &quot;search&quot;... OK 
+info: loading plugin &quot;lunr&quot;... OK 
+info: loading plugin &quot;sharing&quot;... OK 
+info: loading plugin &quot;fontsettings&quot;... OK 
+info: loading plugin &quot;theme-default&quot;... OK 
+info: found 8 pages 
+info: found 0 asset files 
+info: &gt;&gt; generation finished with success in 1.5s ! 
+
+$ ls _book/
+chapter1  chapter2  gitbook  index.html  search_index.json
+</code></pre><h2 id="33-&#x521B;&#x5EFA;-gh-pages-&#x5206;&#x652F;">3.3. &#x521B;&#x5EFA; gh-pages &#x5206;&#x652F;</h2>
+<p>&#x5C06;gitbook&#x751F;&#x6210;&#x7684;html page&#x53D1;&#x5E03;github pages&#x4E0A;(&#x5B9E;&#x9645;&#x662F;&#x63D0;&#x4EA4;&#x5185;&#x5BB9;&#x5230;gh-pages &#x5206;&#x652F;)&#x3002;&#x6240;&#x4EE5;&#x5148;&#x521B;&#x5EFA;arm-cm4-guide&#x7684; gh-pages &#x5206;&#x652F;&#x3002;</p>
+<pre><code>$ git checkout -b gh-pages
+$ rm .git/index
+$ git reset --hard $(echo &quot;branch gh-pages init.&quot; | git commit-tree $(git write-tree))
+$ git push -u origin gh-pages
+</code></pre><p>&#x73B0;&#x5728;&#xFF0C;&#x76EE;&#x5F55;&#x4E0B;&#x5E94;&#x8BE5;&#x53EA;&#x5269;&#x4E0B; _book &#x76EE;&#x5F55;&#x4E86;&#xFF0C;&#x9996;&#x5148;&#xFF0C;&#x5FFD;&#x7565;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>$ echo &quot;*~&quot; &gt; .gitignore
+$ echo &quot;_book&quot; &gt;&gt; .gitignore
+$ git add .gitignore
+$ git commit -m &quot;Ignore some files&quot;
+</code></pre><p>&#x7136;&#x540E;&#xFF0C;&#x52A0;&#x5165; _book &#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x5230;&#x5206;&#x652F;&#x4E2D;&#xFF1A;</p>
+<pre><code>$ cp -r _book/* .
+$ git add .
+$ git commit -m &quot;Publish book&quot;
+</code></pre><h2 id="34-&#x4E0A;&#x4F20;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#x5230;-github">3.4. &#x4E0A;&#x4F20;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#x5230; GitHub</h2>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x4E66;&#x7C4D;&#x5185;&#x5BB9;&#x4E0A;&#x4F20;&#x5230; GitHub &#x4E2D; arm-cm4-guide&#x9879;&#x76EE;&#x7684; gh-pages &#x5206;&#x652F;&#x4E86;.</p>
+<pre><code>$ git push -u origin gh-pages
+</code></pre><p>&#x8BBF;&#x95EE; <a href="https://gitexample.github.io/arm-cm4-guide/" target="_blank">https://gitexample.github.io/arm-cm4-guide/</a> &#x5C31;&#x53EF;&#x4EE5;&#x9605;&#x8BFB; arm-cm4-guide&#x8FD9;&#x672C;&#x4E66;&#x4E86;&#xFF01;</p>
+<h1 id="4-&#x5229;&#x7528;-github-pages-&#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;">4. &#x5229;&#x7528; GitHub Pages &#x5FEB;&#x901F;&#x642D;&#x5EFA;&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;</h1>
+<p>fork&#x522B;&#x4EBA;&#x7684;&#x6A21;&#x677F;&#xFF08;qiubaiying.github.io&#xFF09;&#xFF0C;rename&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x4ED3;&#x5E93;&#x540D;(<user-id>.github.io)&#x3002;
+&#x628A;&#x91CC;&#x9762;&#x7684;&#x9875;&#x9762;&#x5185;&#x5BB9;&#x4FEE;&#x6539;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x5373;&#x53EF;&#x3002;</user-id></p>
 
                                 
                                 </section>
@@ -537,7 +948,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Github和GitBook使用","level":"1.6.1","depth":2,"next":{"title":"Git使用说明","level":"1.6.2","depth":2,"path":"project-manager/git-instructions.md","ref":"project-manager/git-instructions.md","articles":[]},"previous":{"title":"项目管理","level":"1.6","depth":1,"path":"project-manager/README.md","ref":"project-manager/README.md","articles":[{"title":"Github和GitBook使用","level":"1.6.1","depth":2,"path":"project-manager/github-gitbook.md","ref":"project-manager/github-gitbook.md","articles":[]},{"title":"Git使用说明","level":"1.6.2","depth":2,"path":"project-manager/git-instructions.md","ref":"project-manager/git-instructions.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project-manager/github-gitbook.md","mtime":"2018-09-11T06:24:23.359Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-11T06:24:48.960Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Github和GitBook使用","level":"1.6.1","depth":2,"next":{"title":"Git使用说明","level":"1.6.2","depth":2,"path":"project-manager/git-instructions.md","ref":"project-manager/git-instructions.md","articles":[]},"previous":{"title":"项目管理","level":"1.6","depth":1,"path":"project-manager/README.md","ref":"project-manager/README.md","articles":[{"title":"Github和GitBook使用","level":"1.6.1","depth":2,"path":"project-manager/github-gitbook.md","ref":"project-manager/github-gitbook.md","articles":[]},{"title":"Git使用说明","level":"1.6.2","depth":2,"path":"project-manager/git-instructions.md","ref":"project-manager/git-instructions.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project-manager/github-gitbook.md","mtime":"2018-09-11T06:34:30.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-11T06:35:54.401Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

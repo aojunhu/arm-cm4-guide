@@ -15,6 +15,7 @@
 * [项目管理](project-manager/README.md)
     * [Github和GitBook使用](project-manager/github-gitbook.md)
     * [Git使用说明](project-manager/git-instructions.md)
+    * [Linux下ARM软件开发环境构建教程](project-manager/software-development-environment-building-tutorial-of-art2000.md)
 * [编程](programming/README.md)
     * [C/C++](programming/C/README.md)
         * [C语言设计模式](programming/C/c-language-design-pattern.md)

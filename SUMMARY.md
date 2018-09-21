@@ -15,7 +15,7 @@
 * [项目管理](project-manager/README.md)
     * [Github和GitBook使用](project-manager/github-gitbook.md)
     * [Git使用说明](project-manager/2018-09-17-Git-instructions.md)
-    * [Linux下利用Eclipse C/C++搭建嵌入式ARM开发环境](project-manager/software-development-environment-building-tutorial-of-art2000.md)
+    * [Linux下利用Eclipse C/C++搭建嵌入式ARM开发环境](project-manager/arm-software-development-environment-building-tutorial.md)
 * [编程](programming/README.md)
     * [C/C++](programming/C/README.md)
         * [C语言设计模式](programming/C/c-language-design-pattern.md)

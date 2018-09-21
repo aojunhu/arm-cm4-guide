@@ -1,4 +1,4 @@
-# Linux下ART2000软件开发环境构建教程
+# Linux下利用Eclipse C/C++搭建嵌入式ARM开发环境
 
 ---
 [TOC]

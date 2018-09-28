@@ -9,6 +9,7 @@
     * [无线电频谱的划分及用途](wifi/radio-spectrum.md)
     * [80211概述](wifi/overview-80211.md)
 * [ARM相关](arm/README.md)
+    * [ARM GNU工具链汇编语法](arm/arm-gnu-toolchain-assembly-syntax.md)
     * [ARM Cortex-M4启动过程](arm/arm-cortex-m4-bootup.md)
 * [Linux/Android](Linux-Android/README.md)
     * [阅读Android系统源码](Linux-Android/reading-android-source-code.md)

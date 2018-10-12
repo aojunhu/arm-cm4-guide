@@ -13,6 +13,7 @@
     * [ARM Cortex-M4启动过程](arm/arm-cortex-m4-bootup.md)
 * [Linux/Android](Linux-Android/README.md)
     * [阅读Android系统源码](Linux-Android/reading-android-source-code.md)
+    * [跟我一起写Makefile:使用函数](Linux-Android/write-makefile-use-the-function.md)
 * [项目管理](project-manager/README.md)
     * [Github和GitBook使用](project-manager/github-gitbook.md)
     * [Git使用说明](project-manager/2018-09-17-Git-instructions.md)

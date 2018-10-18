@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [收藏文章](collections/README.md)
+    * [my resume](collections/my-resume.md)
     * [最伟大的100部美国电影](collections/The-greatest-100-American-movies.md)
     * [日本到底有多美](collections/How-beautiful-is-Japan.md)
     * [值得每天一看的网站](collections/websites-worth-reading-every-day.md)

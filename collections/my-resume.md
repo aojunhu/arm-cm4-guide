@@ -1,14 +1,28 @@
 # 个人信息
-+ 胡乃全      男                   1982                            工作10年              已婚已育
-+ 硕士          苏州大学        计算机科学与技术     2006-2009
-+ 本科          大连大学        应用数学                    2002-2006
-+ 技术博客：[https://aojunhu.github.io/](https://aojunhu.github.io/)
-+ 手机：158-0055-4463
-+ Emall：hunaiquan@126.com
-+ WeChat : naiquanhu
+![](\images\collections\head_in_resume_mini.png)
++ 胡乃全           男         1982 
++ 学历：          硕士      计算机科学与技术      苏州大学
++ 工作年限：  10年
++ 期望职位：  **WiFi嵌入式软件开发 / 上海 /薪水面议**
 
-# 求职意向     
-WiFi嵌入式软件开发		上海		薪水 面议
+# 联系方式
++ 手机：          158-0055-4463
++ Emall：        hunaiquan@126.com
++ WeChat :      naiquanhu
++ 技术博客：  [https://aojunhu.github.io/](https://aojunhu.github.io/)
+
+# 技能清单
+* 精通C编程。
+* 精通ARM SOC软件开发流程，启动引导流程。
+* 精通常见外设驱动开发（uart/sdio/i2c/spi/gpio/dma/flash等）。
+* 精通Linux下软件开发，驱动及shell脚本编写。
+* 精通Makefile管理大型软件工程。
+* 精通WiFi 802.11 MAC协议。
+* 熟悉Android系统开发。
+* 熟悉Java/Python开发。
+* 熟悉嵌入式开源模块（FreeRTOS/lwip等）。
+* 熟悉Git/SVN项目管理工具。
+* 精通嵌入式开发模式，也熟悉PC端C/S和B/S架构开发，以及后端数据库使用。
 
 # 工作经历
 ## 上海亮牛半导体科技有限公司（2017.03－至今） 2年
@@ -22,7 +36,7 @@ ARM + SOC + Linux + Android + FreeRTOS + AliOS + C/Python/shell/makefile
 3. 设计并实现系统Boot up流程，满足系统升级及安全需求。
 4. 设计并实现MCU软件SDK架构及make流程，以满足功能性、灵活性、稳定性、重用性需求。
 5. AP、STA功能开发及调试，Auto DATA RATE、N聚合、不同加密方式开发调试。
-6. FreeRTOS、LwIP移植，SOC各种外设（uart/sdio/i2c/spi/gpio/dma/flash/pwm等）驱动开发。
+6. FreeRTOS、LwIP移植，SOC各种外设（uart/sdio/i2c/spi/gpio/dma/flash等）驱动开发。
 7. SOC系统调优、吞吐率、低功耗调试。
 8. Linux下常见驱动模块开发（SDIO网卡、字符驱动、串口驱动等）。
 9. Android系统下的WiFi相关模块的调试（APK、framework、wpa_supplicant等）。
@@ -73,4 +87,6 @@ ARM + SOC + Linux + Android + FreeRTOS + mbedOS + C
 4. 开发监控系统的后台数据处理模块，采用Drools规则引擎技术，实现一个大规模复杂业务处理引擎，该引擎包含原始采集数据经过预处理、数据关系及阀值诊断、事件报警、状态传递及故障通知等功能。
 5. 负责系统的部分功能测试，设计系统的压力测试方案，并独立完成压力测试及系统调优
 
-![picture test](\images\collections\head_in_resume.png)
+# 教育经历
++ 苏州大学         计算机科学与技术           硕士           2006-2009
++ 大连大学         应用数学                          本科           2002-2006

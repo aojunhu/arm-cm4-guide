@@ -38,6 +38,19 @@ wget -c http://soft.vpser.net/lnmp/lnmp1.5.tar.gz && tar zxf lnmp1.5.tar.gz && c
 
 之后等待安装完成。
 
+
+
+在安装WordPress之前，建议安装PHP缓存加速类扩展，对降低VPS压力和提高WordPress速度大有裨益。推荐安装两个：OPcache和Memcached。
++ 安装OPcache
+```
+$ cd lnmp1.5/
+$ sudo ./addons.sh install opcache
+```
++ 安装Memcached
+```
+$ sudo ./addons.sh install memcached
+```
+
 ## 3.3 添加虚拟主机
 经过上面的操作，已经安装完成网站的运行环境LNMP，接下来需要创建虚拟主机添加网站，创建虚拟主机的过程是一个交互式的页面。
 ```
@@ -76,6 +89,47 @@ Add SSL Certificate (y/n) n
 ```
 vi /usr/local/nginx/conf/vhost/域名.conf
 ```
+
+本地测试机上的安装信息：
+```
+================================================
+Virtualhost infomation:
+Your domain: www.example.com
+Home Directory: /home/wwwroot/www.example.com
+Rewrite: wordpress
+Enable log: yes
+Database username: example_db
+Database userpassword: 123456
+Database Name: example_db
+Create ftp account: no
+wordpress site: 
+username: admin  
+password: H(h(POoX*!bR1b74vV
+================================================
+
+```
+
+**重要提示**：
+1. 安装完后，默认server root为/home/wwwroot/default，需要改成新添加的vhost。
+```
+$ sudo vi /usr/local/nginx/conf/nginx.conf
+server
+	{
+        root  /home/wwwroot/default;  
+        ---> 
+        root  /home/wwwroot/www.example.com;
+	}
+
+$ sudo /usr/local/nginx/sbin/nginx -s reload
+```
+
+2. 删除/home/wwwroot/default中除phpmyadmin和.user.ini之外的其余文件。并把phpmyadmin重命名为不易猜到的名称。
+```
+$ cd /home/wwwroot/default
+$ sudo rm index.html lnmp.gif p.php phpinfo.php
+$ sudo mv phpmyadmin xxxx
+```
+
 ## 3.4 添加FTP server
 ```
 # cd ~/lnmp1.5/
@@ -99,7 +153,7 @@ tar -zxvf wordpress-4.9.4-zh_CN.tar.gz
 mv wordpress/* .
 rm -rf wordpress
 ```
-**注意**：还需要做一些额外设置：
+**注意，还需要做一些额外设置**：
 + 修改目录 /home/wwwroot的权限
 因为WordPress下载插件，需要使用ftp用户，用户组为www，而/home/wwwroot的owner为root。
 ```
@@ -120,3 +174,7 @@ rm -rf wordpress
 您的电子邮件： hxxxn@126.com
 
 管理后台：http://www.firstdecors.com/wp-admin/
+
+参考资料：
+https://www.seoimo.com/wordpress-vps/
+http://jwcyber.com/build-site/

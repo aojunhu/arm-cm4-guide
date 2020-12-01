@@ -8,41 +8,42 @@
 # 联系方式
 + 手机：          158-0055-4463
 + Emall：        hunaiquan@126.com
-+ WeChat :      naiquanhu
++ WeChat :      15800554463/naiquanhu
 + 技术博客：  [https://aojunhu.github.io/](https://aojunhu.github.io/)
 
 # 技能清单
-* 精通C编程。
-* 精通ARM SOC软件开发流程，启动引导流程。
-* 精通常见外设驱动开发（uart/sdio/i2c/spi/gpio/dma/flash等）。
-* 精通Linux下软件开发，驱动及shell脚本编写。
+* 精通WiFi 802.11 MAC协议，10年以上WiFi芯片开发经验，。
+* 具备Wi-Fi soc解决方案全流程设计开发能力，参与多款大规模量产Wi-Fi芯片从0到1全生命周期开发工作。
+* 精通C/Java/Python编程。
+* 精通ARM SOC软件开发流程，启动引导流程，OTA升级流程。
+* 精通SOC常见外设驱动开发（uart/sdio/i2c/spi/gpio/dma/flash等）。
+* 精通Linux下软件开发，TCP/IP协议、SDIO驱动、WiFi驱动及shell脚本编写。
 * 精通Makefile管理大型软件工程。
-* 精通WiFi 802.11 MAC协议。
 * 熟悉Android系统开发。
-* 熟悉Java/Python开发。
-* 熟悉嵌入式开源模块（FreeRTOS/lwip等）。
+* 熟悉嵌入式开源模块（FreeRTOS/AliOS/lwip等）。
 * 熟悉Git/SVN项目管理工具。
 * 精通嵌入式开发模式，也熟悉PC端C/S和B/S架构开发，以及后端数据库使用。
 
 # 工作经历
-## 上海亮牛半导体科技有限公司（2017.03－至今） 2年
-+ 职位：WiFi芯片软件主管
-+ 下属人数：6
+## 上海亮牛半导体科技有限公司（2017.03－至今） 4年
++ 职位：WiFi芯片软件主管&技术合伙人
++ 下属人数：8
 + 平台&技术
 ARM + SOC + Linux + Android + FreeRTOS + AliOS + C/Python/shell/makefile
 +  职责&业绩：
-1. 负责基于ARM CM4 的WiFi MCU芯片firmware软件开发，SDK设计及新feature预演和实现。
+1. 负责WiFi SoC芯片从0到1的软件开发，SDK设计及新feature预演和实现。
 2. 负责WiFi MAC协议的开发与调试，802.11b/g/n模式功能开发、验证、bug调试与解决。
 3. 设计并实现系统Boot up流程，满足系统升级及安全需求。
-4. 设计并实现MCU软件SDK架构及make流程，以满足功能性、灵活性、稳定性、重用性需求。
-5. AP、STA功能开发及调试，Auto DATA RATE、N聚合、不同加密方式开发调试。
-6. FreeRTOS、LwIP移植，SOC各种外设（uart/sdio/i2c/spi/gpio/dma/flash等）驱动开发。
-7. SOC系统调优、吞吐率、低功耗调试。
-8. Linux下常见驱动模块开发（SDIO网卡、字符驱动、串口驱动等）。
-9. Android系统下的WiFi相关模块的调试（APK、framework、wpa_supplicant等）。
-10. 熟悉Python，熟悉项目管理，SVN、GIT软件的搭建及使用。
-11. 有很强的分析定位解决问题的能力，熟练使用示波器、逻辑分析仪、空口抓包工具。
-12. 有丰富的芯片tapout经验及回片调试经验，丰富的产线问题定位及解决能力。
+4. 设计并实现系统OTA流程，实现远程版本升级。
+5. 设计并实现MCU软件SDK架构及make流程，以满足功能性、灵活性、稳定性、重用性需求。
+6. AP、STA功能开发及调试，Auto DATA RATE、N聚合、不同加密方式开发调试。
+7. FreeRTOS、LwIP移植，SOC各种外设（uart/sdio/i2c/spi/gpio/dma/flash等）驱动开发。
+8. SOC系统调优、吞吐率、低功耗调试。
+9. Linux下常见驱动模块开发（SDIO网卡、字符驱动、串口驱动等）。
+10. Android系统下的WiFi相关模块的调试（APK、framework、wpa_supplicant等）。
+11. 熟悉Python，熟悉项目管理，SVN、GIT软件的搭建及使用。
+12. 有很强的分析定位解决问题的能力，熟练使用示波器、逻辑分析仪、空口抓包工具。
+13. 有丰富的芯片tapout经验及回片调试经验，丰富的产线问题定位及解决能力。
 
 ## 锐迪科微电子科技(上海)有限公司（2011.11－2017.03） 6.5年
 + 职位：WiFi软件高级工程师
